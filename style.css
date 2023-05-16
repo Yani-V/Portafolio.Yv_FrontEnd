@@ -125,3 +125,16 @@
 .form-Login {
     margin-top: 15%;
     }
+
+
+/*Aquí comienza los estilos del panel*/
+
+
+.admin {
+  font-size: 18px;
+}
+
+
+.link{
+    color: black;
+}

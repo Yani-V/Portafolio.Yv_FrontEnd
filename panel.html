@@ -32,63 +32,76 @@
                 <li class="list-group-item">
     <!--Botón que abre el Login-->
     <!-- Button trigger modal -->
-                <a href="login.html"></a><i class="fa-sharp fa-solid fa-user fa-xl text-white" style="color: #000000;"></i>
+                <a href="login.html"><i class="fa-sharp fa-solid fa-user fa-xl text-white" style="color: #000000;"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <!--Columna Datos-->
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-1">
             </div>
-            <div class="col-2">
+            <div class="col-2 pt-6 mt-1 bg-danger w-25">
                 <img src="./Img/Perfil.jpg" alt="perfil"  class="rounded-circle img-fluid">
-                <h4 class="titulo2 text-center intro ">Yanina <br> Velazquez </h4>
-                <h4 class="titulo3 text-center intro">Desarrolladora Web Jr.</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><i class="fa-solid fa-square-share-nodes" style="color: #000000;"></i>Redes</li>
-                    <li class="list-group-item"><i class="fa-solid fa-image-landscape" style="color: #000000;"></i>Banner</li>
-                    <li class="list-group-item"><i class="fa-solid fa-square-info" style="color: #000000;"></i>Información</li>
+                <h4 class="titulo2 text-center intro mt-4">Yanina <br> Velazquez </h4>
+                <h4 class="titulo3 text-center intro mt-4">Desarrolladora Web Jr.</h4>
+                <ul class="list-group mt-4 p-lg-5">
+                    <li class="list-group-item admin"><i class="fa-solid fa-square-share-nodes"></i>Redes</li>
+    <!--Cada li tiene que ser un tregger modal-->
+                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#bannerModal" class="link"><i class="fa-solid fa-image-landscape"></i> Banner </a></li>
+                    <li class="list-group-item admin"><i class="fa-solid fa-square-info" ></i> Información</li>
                 </ul>
             </div>
+
             <div class="col-8">
+    <!-- Inicio de Banner Modal -->
+    <div class="modal fade" id="bannerModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal del Banner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...<!--Colocar textos , inputs , formularios , botones para este espacio-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                        </div>
+                        <div class="col-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                                        </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </form>
+                        </div>
+                        <div class="col-2">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin de Banner Modal-->
             </div>
             <div class="col-1">
             </div>
         </div>
     </div>
 
-    <!--Formulario de Login-->
-    <section class="login">
-    <div class="container">
-        <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col-8" class="form-Login">
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
-                                    </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="Submit" class="btn btn-secondary">Ingresar</button>
-            </div>
-            <small class="registro text-center">si no tenés cuenta <a href="registro.html"> Registrate. </small>
-            <div class="col-2">
-            </div>
-        </div>
-    </div>
-    </section>
     <!--Footer-->
     <footer class="card-footer bg-danger">
         <div class="footer text-center">
