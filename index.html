@@ -20,24 +20,41 @@
 </head>
 <body>
     <!--Navegador-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-blue">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./Img/Logo ArgProg..png" alt="logoArgP" class="w-100">
+            <a class="navbar-brand" href="index.html">
+                <img src="./Img/Logo ArgProg..png" alt="logoArgP" class="logoArgP">
+            </a>
+            <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
+                <img src="./Img/Logo Inti.png" alt="logoInti" class="logoInti">
             </a>
             <ul class="list-group list-group-horizontal">
-                <li class="list-group-item"><i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i></li>
-                <li class="list-group-item"><i class="fa-brands fa-square-github fa-xl" style="color: #000000;"></i></li>
-                <li class="list-group-item"><i class="fa-brands fa-discord fa-xl" style="color: #000000;"></i></li>
-                <li class="list-group-item"><i class="fa-brands fa-square-instagram fa-xl" style="color: #000000;"></i></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin fa-xl text-white" style="color: #000000;"></i></a></li>
+                <li class="list-group-item"><a href="https://github.com/Yani-V"><i class="fa-brands fa-square-github fa-xl text-white" style="color: #000000;"></i></a></li>
+                <li class="list-group-item"><a href="https://discord.gg/nTQDMunP"><i class="fa-brands fa-discord fa-xl text-white" style="color: #000000;"></i></a></li>
+                <li class="list-group-item"><a href="https://instagram.com/im_yani_0?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-square-instagram fa-xl text-white" style="color: #000000;"></i></a></li>
                 <li class="list-group-item">
-                    <!--Botón que abre el Login-->
-                    <!-- Button trigger modal -->
-                <i data-bs-toggle="modal" data-bs-target="#loginModal" class="fa-sharp fa-solid fa-user fa-xl" style="color: #000000;"></i>
+    <!--Botón que abre el Login-->
+    <!-- Button trigger modal -->
+                <a href="login.html"><i class="fa-sharp fa-solid fa-user fa-xl text-white" style="color: #000000;"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
+    <!--Sección de Banner-->
+    <section class="banner">
+          <h3 class="titulo1">Soy</h3>
+          <h1 class="titulo2">Yanina Velazquez <br> </h1>
+          <h3 class="titulo3 text-center">Desarrolladora Web Jr.</h3>
+          <div class="contenedor-perfil">
+            <div class="perfil">
+              <img src="./Img/Perfil.jpg" alt="perfil"  class="rounded-circle img-fluid">
+            </div>
+            <h2 class="presentacion mt-5">Acerca de Mí</h2>
+            <p>Hola! Soy emprendedora de artesanías y dedicada en éste camino interminable que es la programación que me entretiene mucho y me encanta. Sumando experiencias en conceptos y proyectos.</p>
+          </div>
+    </section>
+
     <!-- Login -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -65,28 +82,13 @@
         </div>
     </div>
     </div>
-    <header>
-    <!--Cabecera logos y redes sociales-->
-        <div class="Logos">
-        <img src="./Img/Logo ArgProg..png" alt="LogoArgP">
-        <img src="./Img/Logo Inti.png" alt="LogoInti">
-        </div>
-    </header>
-    <main>
-        <!--Datos principales-->
-    <img src="./Img/Banner.jpg" alt="banner" class="banner">
-        <img src="./Img/Perfil.jpg" alt="Foto" class="perfil">
-    <h1 class="titulo">
-        Yanina Lujan Velazquez
-    </h1>
-    <section>
-        <h2>Sobre Mí</h2>
-        <p>Hola! Soy emprendedora y principiante en programación, curiosa y con ganas de aprender más y más!</p>
-    </section>
 
+
+    <!--Datos Perfil-->
     <!--Experiencias-->
-    <section>
-        <h2>Experiencia</h2>
+<div class="fondo">
+    <section class="datos1">
+        <h2>Experiencias</h2>
         <ul>
             <li>Lorem ipsum dolor, sit....!</li>
             <li>Lorem ipsum dolor, sit....!</li>
@@ -94,65 +96,166 @@
     </section>
 
     <!--Educación-->
+
     <section>
+      <div class="content-educación">
         <h2>Educación</h2>
-        <section>
-        <img src="./Img/logoUNSJB.png" alt="logoUni" class="logoUni">
-        <img src="./Img/educhubut-logo.png" alt="logoEsc" class="logoEsc">
-        </section>
-        <section>
-            <ul>
-            <li>Analista en Sistemas - Universidad San Juan Bosco / 1er Cuatrimestre</li>
-            <li>Escuela Secundaria Nº 750 Leandro.N.Alem / Humanidades y Cs. Sociales</li>
-            </ul>
-        </section>
+
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="" class="" alt="logo">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></P>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./Img/logoUNSJB.png" class="logoUNSJB w-25" alt="logoUNSJB">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Universidad Nacional de la Patagonia San Juan Bosco</h5>
+                  <p class="card-text">Analista en Sistemas. <br> 2018 (No Terminado)</P>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./Img/educhubut-logo.png" class="logoUNSJB w-25" alt="logo">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Escuela Leandro N.Alem Nº750</h5>
+              <p class="card-text">Secundaria Completo. <br> Humanidades y Cs. Sociales. <br> 2005/2008</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./Img/Logo213.jpg" class="logoUNSJB w-25" alt="logo">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Escuela Mari Mari Cani Nº 213</h5>
+              <p class="card-text">Secundaria 1ra parte <br> 2002/2004</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./Img/logoUNSJB.png" class="logoUNSJB w-25" alt="logo">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Escuela Celina Balan de Padilla Nº3</h5>
+              <p class="card-text">Primaria Completo. <br> 1996/2001</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
 
-    <!--Habilidades-->
-    <section>
-        <h2>Habilidades</h2>
-    </section>
+    <!--Hard & Soft Skills-->
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      <h2> Html / Css </h2>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      <h2> JavaScript </h2>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
 
     <!--Proyectos-->
     <section>
-        <h2>Proyectos</h2>
-        <section class="logos">
-            <img src="./Img/logo-CAC.webp" alt="codoacodo" class="logoCAC">
-            <img src="./Img/logoAlura.png" alt="alura" class="logoAlura">
-            <img src="./Img/logo-blue.svg" alt="arg" class="logoArg">
-            <img src="./Img/logoBaMulti23.jpeg" alt="ba23" class="logoBa23">
-            <img src="./Img/logoBaMulti.jpg" alt="ba22" class="logoBa22">
-        </section>
-        <section>
-            <ul>
-                <li>Codo a Codo / Diseño UX/UI </li>
-                <li>Alura Latam</li>
-                <li>ArgenClub</li>
-                <li>Ba Multiplica</li>
-            </ul>
-            </section>
+      <div class="list-group list-group-horizontal"> 
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CODO A CODO <br> Diseño UX/UI</h5>
+          <p class="card-text">Como proyecto final, hemos trabajado en equipo, 4 mujeres íncluyendome para el armado de una aplicación lo que conllevó mucha investigación al usuario futuro. Diseñamos una Aplicación de Tramites a nivel nacional con el nombre "TramitáYa".</p><img src="./Img/logo-CAC.webp" class="card-img-top w-4" alt="logoCAC">
+          <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BA Multiplica 2.0 <br> Programación Web Inicial - FrontEnd Developer.</h5>
+          <p class="card-text">Como proyecto final , realizamos individualmente una página web sobre una Biografía.</p><img src="./Img/logoBaMulti23.jpg" class="card-img-top w-8" alt="logoBaMulti23">
+          <a href="https://yani-v.github.io/Proy.BaMulti.YV/index.html" class="btn btn-primary">Ir a Sitio</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ALURA LATAM</h5>
+          <p class="card-text">Por èsta escuela hemos visto muchos temas variados, por lo que prácticamos varios proyectos y como final de cada tema se presentaba un challengue de un lenguaje especificado. La verdad muy Recomendable! Me llevé muchos conceptos nuevos y mucho aprendizaje.</p><img src="./Img/logoAlura.png" class="card-img-top-ALURA" alt="logoAlura">
+          <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TECNO3F <br> Programación orientada al Desarrollo Web</h5>
+          <p class="card-text">Como proyecto final elaboramos nuestra propia página de algún emprendimiento, individualmente.</p><img src="./Img/logo-blue.svg" class="card-img-top w-8" alt="logo-blue">
+          <a href="https://yani-v.github.io/Tecno.I-Pr-W/index.html" class="btn btn-primary">Ir a sitio</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ba-Multiplica 1.0 <br> Herramientas Digitales - Habilidades Blandas </h5>
+          <p class="card-text">Amé ésta capacitación, muy variado e interesante! Fue mi primera práctica diseñando un página web básica, fue asi donde comencé en el mundo de la programación!</p><img src="./Img/logoBaMulti.jpg" class="card-img-top w-8" alt="logoBaMulti">
+          <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+        </div>
+      </div>
+    </div>
     </section>
     </main>
-    <footer>
-        <!--Contacto-->
-        <section>
-        <h2>Contacto</h2>
-        <form>
-        </form>
-        <label for="nombreapellido">Nombre y Apellido</label>
-        <input type="text" id="nombreapellido" class="input-padron" required>
-        <label for="correoelectronico">Corre Electrónico</label>
-        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="" required></textarea>
-        </section>
-
+    <footer class="card-footer bg-danger">
+      <div class="footer text-center">
         <!--copyright-->
         <p>© Copyright Yanina Velazquez 2023</p>
 
         <!--Icono de volver al principio-->
         <i class="fa-duotone fa-arrow-right fa-rotate-270" style="--fa-primary-color: #000000; --fa-secondary-color: #875c12;"></i>
+      </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!--JavaScript-->
+  <script src="app.js"></script>
 </body>
 </html>
