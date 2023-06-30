@@ -32,11 +32,11 @@ section.banner {
     width: 100%;
     background-repeat: no-repeat;
     position:relative;
-    background-size: cover;
+    -msn-background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -msn-background-size: cover;
+    background-size: cover;
 }
 
 .container-banner {
@@ -112,6 +112,7 @@ text-align: center;
 
 .card {
     background-color: transparent;
+    width: 18rem;
 }
 
 
@@ -170,16 +171,26 @@ text-align: center;
 
 /*Hard & Soft Skills */
 
-.progress-s {
+.progress-container {
     width: 100%;;
-    height: 40%;
+    height: 100%;
     background-color: #2b1d1627;
     align-items: center;
 }
 
-.progress {
-    width: 30%;
-    margin-left: 40%;
+.progress  {
+    width: 50%;
+    height: 10%;
+    margin-left: 23%;
+    background: none;
+}
+
+.progress-bar {
+    padding: 5px;
+    padding-top: 7px;
+    margin: 3px;
+    margin-top: 30px;
+    margin-right: 25%;
 }
 
 .titulo-progress {
@@ -210,6 +221,8 @@ text-align: center;
     height: 20%;
     background-color:rgb(97, 64, 14) ;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .copyright {
@@ -234,10 +247,40 @@ text-align: center;
 
 
 .admin {
-  font-size: 18px;
+    font-size: 12px;
 }
 
+.perfil{
+    width: 100px;
+}
 
 .link{
     color: black;
+    text-decoration: none;
 }
+
+/*estilos del nav*/
+
+nav.vertical {
+    float: left;
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+li.vertical .list-group-item {
+    display: block;
+    margin: 0;
+    writing-mode: vertical;
+    padding: 0.75rem 0;
+    font-size: 1.10rem;
+}
+
+a, a:hover {
+    color: #000; 
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+

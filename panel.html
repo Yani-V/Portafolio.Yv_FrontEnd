@@ -16,8 +16,7 @@
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/a8f9d64333.js" crossorigin="anonymous"></script>
 
-    <!--Confuguración de estilos-->
-    <link rel="stylesheet" href="reset.css">
+    <!--Configuración de estilos-->
     <link rel="stylesheet" href="style.css">
 
     <!--Título de página-->
@@ -37,61 +36,135 @@
                 <li class="list-group-item">
     <!--Botón que abre el Login-->
     <!-- Button trigger modal -->
-                <a href="login.html"><i class="fa-sharp fa-solid fa-user fa-xl text-white" style="color: #000000;"></i></a>
+                <a href="login.html"><i class="fa-sharp fa-solid fa-user fa-xl text-white" style="color: #000;"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
+    <div class="row">
+        <div class="col-1">
+            <nav class="vertical" role="tablist" id="list-tab" >
+                <ul>
+                    <li class="vertical">
+                        <a class="list-group-item list-group-item-action active" id="list-redes-list" data-bs-toggle="list" href="#list-redes" role="tab" aria-controls="list-redes"><i class="fa-sharp fa-solid fa-square-share-nodes"></i></a></li>
+                    <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-banner-list" data-bs-toggle="list" href="#list-banner" role="tab" aria-controls="list-banner"><i class="fa-sharp fa-solid fa-image"></i></a></li>
+                    <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-informacion-list" data-bs-toggle="list" href="#list-informacion" role="tab" aria-controls="list-informacion"><i class="fa-sharp fa-solid fa-square-info"></i></a></li></li>
+                    <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-experiencia-list" data-bs-toggle="list" href="#list-experiencia" role="tab" aria-controls="list-experiencia"><i class="fa-solid fa-briefcase-blank"></i></a></li>
+                    </li>
+                    <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-educacion-list" data-bs-toggle="list" href="#list-educacion" role="tab" aria-controls="list-educacion"><i class="fa-solid fa-diploma"></i></a></li>
+                    </li>
+                    <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-scrills-list" data-bs-toggle="list" href="#list-scrills" role="tab" aria-controls="list-scrills"><i class="fa-sharp fa-regular fa-bars-progress"></i></a></li>
+                    </li>
+                    <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-proyectos-list" data-bs-toggle="list" href="#list-proyectos" role="tab" aria-controls="list-proyectos"><i class="fa-duotone fa-laptop-file"></i></a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-11 mt-5">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list">Redes</div>
+                <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">banner</div>
+                <div class="tab-pane fade" id="list-informacion" role="tabpanel" aria-labelledby="list-informacion-list">informacion</div>
+                <div class="tab-pane fade" id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia-list">experiencia</div>
+                <div class="tab-pane fade" id="list-educacion" role="tabpanel" aria-labelledby="list-educacion-list">educacion</div>
+                <div class="tab-pane fade" id="list-scrills" role="tabpanel" aria-labelledby="list-scrills-list">scrills</div>
+                <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">proyectos</div>
+            </div>
+        </div>
+    </div>
 
-    <!--Columna Datos-->
+    <div class="col-11 mt-5">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list">
+            <div class="container px-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="linkedin" class="form-label">Linkedin</label>
+                        <input type="text" class="form-control" id="linkedin">
+                    </div>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <div class="mb-3">
+                        <label for="gitHub" class="form-label">GitHub</label>
+                        <input type="text" class="form-control" id="gitHub">
+                    </div>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <div class="mb-3">
+                        <label for="discord" class="form-label">Discord</label>
+                        <input type="text" class="form-control" id="discord">
+                    </div>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <div class="mb-3">
+                        <label for="instagram" class="form-label">Instagram</label>
+                        <input type="text" class="form-control" id="instagram">
+                    </div>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+<!--
+    --Columna Datos--
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-1">
             </div>
-            <div class="col-2 pt-6 mt-1 bg-danger w-25">
-                <img src="./Img/Perfil.jpg" alt="perfil"  class="rounded-circle img-fluid">
-                <h4 class="titulo2 text-center intro mt-4">Yanina <br> Velazquez </h4>
-                <h4 class="titulo3 text-center intro mt-4">Desarrolladora Web Jr.</h4>
-                <ul class="list-group mt-4 p-lg-5">
-                    <li class="list-group-item admin"><i class="fa-solid fa-square-share-nodes"></i>Redes</li>
-    <!--Cada li tiene que ser un tregger modal-->
-                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#bannerModal" class="link"><i class="fa-solid fa-image-landscape"></i> Banner </a></li>
-                    <li class="list-group-item admin"><i class="fa-solid fa-square-info" ></i> Información</li>
+            <div class="col-2 pt-6">
+                <img src="./Img/Perfil.jpg" alt="perfil"  class="rounded-circle img-fluid perfil mt-3">
+                <h6 class="text-center intro mt-5">Yanina Lujan Velazquez</h6>
+                <h6 class="text-center intro mt-5">Desarrolladora Web Jr.</h6>
+                <ul class="list-group mt-5">
+                    <li class="list-group-item admin"><a href="#"> Redes</a></li>
+                    -Cada li tiene que ser un trigger modal--
+                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#bannerModal" class="link">  Banner</a></li>
+                    <li class="list-group-item admin"><a href="#"> Información</a></li>
+                    <li class="list-group-item admin"><a href="#"> Experiencias</a></li>
+                    <li class="list-group-item admin"><a href="#"> Educación</a></li>
+                    <li class="list-group-item admin"><a href="#"> Hard & Soft Skills</a></li>
+                    <li class="list-group-item admin"><a href="#"> Proyectos</a></li>
                 </ul>
             </div>
-
+-->
             <div class="col-8">
     <!-- Inicio de Banner Modal -->
-    <div class="modal fade" id="bannerModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal del Banner</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Modal del Banner</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                ...<!--Colocar textos , inputs , formularios , botones para este espacio-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2">
-                        </div>
-                        <div class="col-8">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
-                                        </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <!--colocar texto input, formulario , botones para este espacio-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1">
+                                Column
                             </div>
-                        </form>
+                            <div class="col-4">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                                                </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-1">
+                                Column
+                            </div>
+                            </div>
                         </div>
-                        <div class="col-2">
-                        </div>
-                    </div>
-                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -105,17 +178,18 @@
             <div class="col-1">
             </div>
         </div>
-    </div>
+</div>
+
 
     <!--Footer-->
-    <footer class="card-footer bg-danger">
-        <div class="footer text-center">
+    <div class="footer">
+        <footer class="footer">
             <!--copyright-->
-            <p>© Copyright Yanina Velazquez - 2023</p>
+            <p class="copyright text-center">© Copyright Yanina Velazquez - 2023</p>
             <!--Icono de volver al principio-->
             <i class="fa-duotone fa-arrow-right fa-rotate-270" style="--fa-primary-color: #000000; --fa-secondary-color: #875c12;"></i>
+        </footer>
         </div>
-    </footer>
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
