@@ -6,7 +6,7 @@
 /*Sección de la Navegación*/
 
 .navbar {
-    background-color: #99593a63;
+    background-color: #debbb5 ;
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
@@ -20,14 +20,17 @@
     width: 50%;
 }
 
-.list-group-item {
+.container-fluid .list-group-item {
+    color: #503934;
+    width: 40%;
     background-color: transparent;
     border: 1px solid transparent;
 }
 
 /*Sección de Banner - perfil*/
+
 section.banner {
-    background-image: url(./Img/Banner.jpg);
+    background-image: url(./Img/banner.jpg);
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -43,7 +46,6 @@ section.banner {
     height: 100%;
     width: 100%;
 }
-
 
 .titulo1{
     padding-top: 3%;
@@ -69,7 +71,6 @@ section.banner {
     color: #ffffff;;
 }
 
-
 .contenedor-perfil {
     padding: 40px;
     padding-top: 8%;
@@ -89,8 +90,7 @@ section.banner {
     border-radius: 100%;
 }
 
-
-/*Datos Perfil*/
+/*Sección Perfil*/
 
 .subtítulos {
 margin-top: 2%;
@@ -99,8 +99,8 @@ color:#471e1e;
 text-align: center;
 }
 
+/*Sección info*/
 
-/*Acerca de Mí*/
 .container-perfil {
     width: 100%;
     height: 25%;
@@ -113,10 +113,17 @@ text-align: center;
 .card {
     background-color: transparent;
     width: 18rem;
+    margin-top: 7%;
+    text-align: center;
 }
 
+.card-container {
+    background: transparent;
+    margin-bottom: 3;
+    max-width: 540px;
+}
 
-/*Experiencias*/
+/*Sección experiencias*/
 
 .container-experiencias {
     width: 100%;
@@ -130,8 +137,8 @@ text-align: center;
     position: relative;
 }
 
+/*Sección educación*/
 
-/*Educación*/
 .container-educación {
     width: 100%;
     height: 25%;
@@ -149,7 +156,6 @@ text-align: center;
     margin-left: 33px;
     margin-top: 30px;
 }
-
 
 .logo750 {
     width: 50%;
@@ -169,7 +175,7 @@ text-align: center;
     margin-top: 30px;
 }
 
-/*Hard & Soft Skills */
+/*Sección Skills */
 
 .progress-container {
     width: 100%;;
@@ -197,7 +203,7 @@ text-align: center;
     margin-left: 30%;
 }
 
-/*Proyectos*/
+/*Sección proyectos*/
 
 .container-proyectos {
     width: 100%;
@@ -205,6 +211,7 @@ text-align: center;
     background-color: #99593a63;
     padding: 10px;
 }
+
 
 .card-img-top-ALURA {
     width: 20%;
@@ -214,12 +221,12 @@ text-align: center;
     width: 45%;
 }
 
-/*Estilos de Footer*/
+/*Sección footer*/
 
 .footer {
     width: 100%;
-    height: 20%;
-    background-color:rgb(97, 64, 14) ;
+    height: 10%;
+    background-color: #281c1a;
     align-items: center;
     position: fixed;
     bottom: 0;
@@ -227,12 +234,12 @@ text-align: center;
 
 .copyright {
     font-size: 14px;
-    color: #ffffff;
+    color: #c88e83;
     padding: 5px;
+    margin-top: 15px;
 }
 
-
-/*Aquí comienza los estilos del archivo Login*/
+/*Sección Login*/
 
 .login {
     height: 70vh;
@@ -242,8 +249,7 @@ text-align: center;
     margin-top: 15%;
     }
 
-
-/*Aquí comienza los estilos del panel*/
+/*Sección panel*/
 
 
 .admin {
@@ -259,7 +265,7 @@ text-align: center;
     text-decoration: none;
 }
 
-/*estilos del nav*/
+/*Sección nav del panel*/
 
 nav.vertical {
     float: left;
@@ -269,18 +275,36 @@ nav.vertical {
 
 li.vertical .list-group-item {
     display: block;
+    color: #78554f;
     margin: 0;
     writing-mode: vertical;
-    padding: 0.75rem 0;
-    font-size: 1.10rem;
+    padding: 1rem;
+    font-size: 1.50rem;
 }
 
-a, a:hover {
-    color: #000; 
-    text-decoration: none;
-}
 
 ul {
     list-style: none;
 }
 
+
+/*Botones del Panel*/
+
+
+.botones {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.last{
+    padding-bottom: 7rem;
+}
+
+/*Aquí estilos de formularios*/
+
+.form-control-textarea {
+    width: 60%;
+    height: 80px;
+}
